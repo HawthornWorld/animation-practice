@@ -89,4 +89,33 @@
   height: 75px;
   background-color: #555869;
   z-index: -1;
+  &:after{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    border: 3px solid #555869;
+    border-radius: 50%;
+    top: 20px;
+    animation: rod 2s infinite linear;
+  }
+}
+@keyframes flower-left {
+  0% {transform: rotate(-25deg)}
+  50% {transform: rotate(-30deg)
+  scale(0.95)}
+  100% {transform: rotate(-25deg)}
+}
+@keyframes flower-right {
+  0% {transform: rotate(25deg)}
+  50% {transform: rotate(30deg)
+  scale(0.95)}
+  100% {transform: rotate(25deg)}
+}
+@keyframes rod {
+  0% {transform: rotate(0)}
+  25% {transform: rotate(8deg)}
+  50% {transform: rotate(0)}
+  75% {transform: rotate(-8deg)}
+  100% {transform: rotate(0)}
 }
